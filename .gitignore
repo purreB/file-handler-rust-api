@@ -13,3 +13,6 @@ Cargo.lock
 # Added by cargo
 
 /target
+/file_api.Api/target
+/file_api.Core/target
+/file_api.Persistence/target
