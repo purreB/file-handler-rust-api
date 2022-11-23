@@ -1,5 +1,5 @@
 [package]
-name = "file_api-Core"
+name = "file_api_core"
 version = "0.1.0"
 edition = "2021"
 

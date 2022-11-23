@@ -1,5 +1,5 @@
 [package]
-name = "file_api-Api"
+name = "file_api_api"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,4 +8,5 @@ edition = "2021"
 [dependencies]
 actix-web = "4.2.1"
 cargo-watch = "8.1.2"
-file_api-Core = {path = "../file_api.Core"}
+file_api_core = {path = "../file_api.Core"}
+file_api_persistence = {path = "../file_api.Persistence"}
