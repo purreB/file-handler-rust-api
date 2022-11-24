@@ -1,10 +1,28 @@
-use byte_array::ByteArray;
 use uuid::Uuid;
 
-pub struct pdf {
-    pub id: Uuid::new_v4(),
+#[derive(Debug)]
+pub struct Pdf {
+    pub id: Uuid,
     pub name: String,
     pub file_size: usize,
-    pub content: ByteArray::new(),
-    pub cheksum: String,
+    pub content: Vec<u8>,
+    pub checksum: String,
+}
+
+impl Pdf {
+    pub fn new(
+        id: Uuid,
+        name: String,
+        file_size: usize,
+        content: Vec<u8>,
+        checksum: String,
+    ) -> Self {
+        Self {
+            id,
+            name,
+            file_size,
+            content,
+            checksum,
+        }
+    }
 }
