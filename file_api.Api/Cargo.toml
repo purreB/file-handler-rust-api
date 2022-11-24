@@ -10,3 +10,11 @@ actix-web = "4.2.1"
 cargo-watch = "8.1.2"
 file_api_core = {path = "../file_api.Core"}
 file_api_persistence = {path = "../file_api.Persistence"}
+
+[dependencies.uuid]
+version = "1.2.2"
+features = [
+    "v4",
+    "fast-rng",
+    "macro-diagnostics", 
+]
